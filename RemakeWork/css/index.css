@@ -14,6 +14,9 @@ li{
         width: 70%;
         margin: 0 auto;
     }
+    .flexBox{
+      display: flex;
+    }
 
     /*HEADER*/
     header{
