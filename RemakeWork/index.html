@@ -8,6 +8,13 @@
         <link rel="icon" href="favicon.ico">
         <link rel="stylesheet" href="common/css/html5reset-1.6.1.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/slick-carousel@1/slick/slick.min.css,npm/slick-carousel@1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick-theme.min.css">
+        <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3,npm/slick-carousel@1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body>
         <!-- HEADER -->
@@ -16,7 +23,7 @@
                 <a href="index.html"><img src="common/img/logo.png" height="70px"class="left"></a>
                 <div class="right">
                     <a href="#"><img src="common/img/star.png" height="70px"></a>
-                    <a href="#"><img src="common/img/user.png" height="70px"></a>
+                    <a href="member/membersite.html"><img src="common/img/user.png" height="70px"></a>
                     <a href="#"><img src="common/img/cart.png" height="70px"></a>
                 </div>
             </div>
@@ -30,48 +37,49 @@
 
             <!--MAIN VISUAL-->
             <div id="mainVisual">
-                <img src="img/main1.png">
+                <ul class="slider">
+                    <li><img src="img/main1.png"></li>
+                    <li><img src="img/main2.png"></li>
+                    <li><img src="img/main3.png"></li>
+                    <li><img src="img/main4.png"></li>
+                </ul>
             </div>
 
             <!--SIDE MENU-->
             <div id="sideMenu">
 
-                <div class="container">
+                <div id="searchBox">
+                    <input type="search" name="search" placeholder="FIND ITEMS">
+                </div>
 
-                    <div id="searchBox">
-                        <input type="search" name="search" placeholder="FIND ITEMS">
-                    </div>
+                <div id="switch">
+                    <div class="button"><p>M</p></div>
+                    <div class="button"><p>W</p></div>
+                    <div class="button"><p>K</p></div>
+                </div>
 
-                    <div id="switch">
-                        <div class="button"><p>M</p></div>
-                        <div class="button"><p>W</p></div>
-                        <div class="button"><p>K</p></div>
-                    </div>
+                <div id="checkBox">
+                    <h1>ITEMS</h1>
+                    <ul>
+                        <li><input type="checkbox" name="01" id="checkBox01"><label for="checkBox01">JACKET</label></li>
+                        <li><input type="checkbox" name="02" id="checkBox02"><label for="checkBox02">RAIN WEAR</label></li>
+                        <li><input type="checkbox" name="03" id="checkBox03"><label for="checkBox03">FLEECE</label></li>
+                        <li><input type="checkbox" name="04" id="checkBox04"><label for="checkBox04">CUT AND SEWN</label></li>
+                        <li><input type="checkbox" name="05" id="checkBox05"><label for="checkBox05">T-SHIRT</label></li>
+                        <li><input type="checkbox" name="06" id="checkBox06"><label for="checkBox06">UNDERSHIRT</label></li>
+                        <li><input type="checkbox" name="07" id="checkBox07"><label for="checkBox07">BOTTOMS</label></li>
+                        <li><input type="checkbox" name="08" id="checkBox08"><label for="checkBox08">HEAR DRESS</label></li>
+                        <li><input type="checkbox" name="09" id="checkBox09"><label for="checkBox09">EARRING</label></li>
+                        <li><input type="checkbox" name="10" id="checkBox10"><label for="checkBox10">NECKLACE</label></li>
+                        <li><input type="checkbox" name="11" id="checkBox11"><label for="checkBox11">BRACELET</label></li>
+                    </ul>
+                </div>
 
-                    <div id="checkBox">
-                        <h1>ITEMS</h1>
-                        <ul>
-                            <li><input type="checkbox" name="01" id="checkBox01"><label for="checkBox01">JACKET</label></li>
-                            <li><input type="checkbox" name="02" id="checkBox02"><label for="checkBox02">RAIN WEAR</label></li>
-                            <li><input type="checkbox" name="03" id="checkBox03"><label for="checkBox03">FLEECE</label></li>
-                            <li><input type="checkbox" name="04" id="checkBox04"><label for="checkBox04">CUT AND SEWN</label></li>
-                            <li><input type="checkbox" name="05" id="checkBox05"><label for="checkBox05">T-SHIRT</label></li>
-                            <li><input type="checkbox" name="06" id="checkBox06"><label for="checkBox06">UNDERSHIRT</label></li>
-                            <li><input type="checkbox" name="07" id="checkBox07"><label for="checkBox07">BOTTOMS</label></li>
-                            <li><input type="checkbox" name="08" id="checkBox08"><label for="checkBox08">HEAR DRESS</label></li>
-                            <li><input type="checkbox" name="09" id="checkBox09"><label for="checkBox09">EARRING</label></li>
-                            <li><input type="checkbox" name="10" id="checkBox10"><label for="checkBox10">NECKLACE</label></li>
-                            <li><input type="checkbox" name="11" id="checkBox11"><label for="checkBox11">BRACELET</label></li>
-                        </ul>
-                    </div>
-
-                    <div id="price">
-                        <h1>PRICE</h1>
-                        <p>$</p><input type="search" name="min" placeholder="MIN">
-                        <p>&tilde;</p>
-                        <p>$</p><input type="searce" name="max" placeholder="MAX">
-                    </div>
-
+                <div id="price">
+                    <h1>PRICE</h1>
+                    <p>$<input type="search" name="min" placeholder="MIN"></p>
+                    <p class="tilde">~</p>
+                    <p>$<input type="searce" name="max" placeholder="MAX"></p>
                 </div>
 
             </div>
@@ -82,15 +90,15 @@
                     <h1>TOPIC</h1>
                     <div class="flexBox">
                       <div class="topicBox">
-                        <img src="">
+                        <img src="img/topic1.png">
                         <p></p>
                       </div>
                       <div class="topicBox">
-                        <img src="">
+                        <img src="img/topic2.png">
                         <p>Introduce new items</p>
                       </div>
                       <div class="topicBox">
-                        <img src="">
+                        <img src="img/topic3.png">
                         <p></p>
                       </div>
                     </div>
@@ -103,22 +111,22 @@
                     <div class="flexBox">
 
                       <div class="newBox">
-                        <img src="">
+                        <img src="img/new1.png">
                         <p>Lady's<br>
                         $80.00</p>
                       </div>
                       <div class="newBox">
-                        <img src="">
+                        <img src="img/new2.png">
                         <p>Men's<br>
                         $80.00</p>
                       </div>
                       <div class="newBox">
-                        <img src="">
+                        <img src="img/new3.png">
                         <p>Shoes<br>
                         $80.00</p>
                       </div>
                       <div class="newBox">
-                        <img src="">
+                        <img src="img/new4.png">
                         <p>Lady's<br>
                         $80.00</p>
                       </div>
@@ -130,22 +138,22 @@
                       <div class="flexBox">
 
                         <div class="newBox">
-                          <img src="">
+                          <img src="img/new5.png">
                           <p>Men's<br>
                             $80.00</p>
                         </div>
                         <div class="newBox">
-                          <img src="">
+                          <img src="img/new6.png">
                           <p>Lady's<br>
                             $80.00</p>
                         </div>
                         <div class="newBox">
-                          <img src="">
+                          <img src="img/new7.png">
                           <p>Lady's<br>
                             $80.00</p>
                         </div>
                         <div class="newBox">
-                          <img src="">
+                          <img src="img/new8.png">
                           <p>Men's<br>
                             $80.00</p>
                         </div>
@@ -159,17 +167,17 @@
                     <h2><a href="">see more</h2></a>
                     <div class="flexBox">
                       <div class="rateBox">
-                        <img src="">
+                        <img src="img/rating1.png">
                         <p>Lady's<br>
                         $80.00</p>
                       </div>
                       <div class="rateBox">
-                        <img src="">
+                        <img src="img/rating3.png">
                         <p>Lady's<br>
                         $80.00</p>
                       </div>
                       <div class="rateBox">
-                        <img src="">
+                        <img src="img/rating3.png">
                         <p>Lady's<br>
                         $80.00</p>
                       </div>
@@ -177,21 +185,21 @@
                 </div>
 
                 <div id="handmade">
-                    <h1>HANDMADE<h1>
+                    <h1>HANDMADE</h1>
                     <a href=""><h2>see more</h2></a>
                     <div class="flexBox">
                       <div class="madeBox">
-                        <img src="">
+                        <img src="img/handmade1.png">
                         <p>Accessory<br>
                         $8.00</p>
                       </div>
                       <div class="madeBox">
-                        <img src="">
+                        <img src="img/handmade2.png">
                         <p>Accessory<br>
                         $8.00</p>
                       </div>
                       <div class="madeBox">
-                        <img src="">
+                        <img src="img/handmade3.png">
                         <p>Accessory<br>
                         $8.00</p>
                       </div>
@@ -222,35 +230,37 @@
                 </div>
 
                 <div id="siteMap">
-                  <div class="lineText">
-                    <ul>
-                      <li><h1>GUIDE/CONTACT</h1></li>
-                      <li>Help</li>
-                      <li>Terms of service</li>
-                      <li>Privacy policy</li>
-                    </ul>
-                  </div>
+                    <div class="flexBox">
+                        <div class="lineText">
+                            <ul>
+                                <li><h1>GUIDE/CONTACT</h1></li>
+                                <li>Help</li>
+                                <li>Terms of service</li>
+                                <li>Privacy policy</li>
+                            </ul>
+                        </div>
 
-                  <div class="lineText">
-                    <ul>
-                      <li><h1>HOUSE CARD MEMBER</h1></li>
-                      <li>Sing up</li>
-                      <li>Sign in</li>
-                      <li>Member service</li>
-                      <li>App</li>
-                    </ul>
-                  </div>
+                        <div class="lineText">
+                            <ul>
+                                <li><h1>HOUSE CARD MEMBER</h1></li>
+                                <li>Sing up</li>
+                                <li>Sign in</li>
+                                <li>Member service</li>
+                                <li>App</li>
+                            </ul>
+                        </div>
 
-                  <div class="lineText">
-                    <ul>
-                      <li><h1>NISHIMURA Co.,Ltd.</h1></li>
-                      <li>Web site</li>
-                      <li>About us</li>
-                      <li>Recruit</li>
-                      <li>Message</li>
-                      <li>Gift card</li>
-                    </ul>
-                  </div>
+                        <div class="lineText">
+                            <ul>
+                                <li><h1>NISHIMURA Co.,Ltd.</h1></li>
+                                <li>Web site</li>
+                                <li>About us</li>
+                                <li>Recruit</li>
+                                <li>Message</li>
+                                <li>Gift card</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
             </footer>
