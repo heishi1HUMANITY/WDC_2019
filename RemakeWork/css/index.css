@@ -190,13 +190,104 @@ li{
 
     article h1{
         border-bottom: 1px solid darkgray;
+        margin-bottom: 10px;
     }
 
     article h2{
         text-align: right;
     }
 
-    .topicBox, .newBox, .rateBox, .madeBox{
+    .topicBox, .box{
         border: 1px solid darkgray;
     }
+
+    .topicBox{
+        width: 30%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .topicBox:first-child,.box:first-child{
+        margin-left: 0;
+    }
+
+    .topicBox:last-child,.box:last-child{
+        margin-right: 0;
+    }
+
+    .topicBox img{
+        width: 100%;
+        height: auto;
+    }
+
+    .box{
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 25%;
+        text-align: center;
+    }
+
+    .box img{
+        width: 80%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #new #up .box{
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    #new .box{
+        border-left: none;
+    }
+
+    #new .box:first-child{
+        border-left: 1px solid darkgray;
+    }
+
+    /*FOOTER*/
+        /*BRANDS*/
+        #brand{
+            background-color: #DBDBDB;
+        }
+
+        #brand img{
+            width: 20%;
+        }
+
+        #brand .flexBox img{
+            margin: 0 auto;
+        }
+
+        #brand .flexBox img:first-child{
+            margin-left: 0;
+        }
+
+        #brand .flexBox img:last-child{
+            margin-right: 0;
+        }
+
+        /*SNSs*/
+        #sns li{
+            display: inline;
+        }
+
+        /*SITEMAP*/
+        #siteMap{
+            background-color: #DBDBDB;
+        }
+
+        #siteMap img{
+            width: 25%;
+            height: auto;
+        }
+
+        #siteMap h1{
+            font-size: 18px;
+        }
+
+
 }
