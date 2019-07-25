@@ -1,51 +1,14 @@
 @charset "UTF-8";
-
-li{
-    list-style-type: none;
-}
-
-.clear{
-    clear: both;
-}
-
 @media screen and (min-width: 767px){
   /*BASE*/
-  .container{
-    width: 70%;
-    margin: 0 auto;
-  }
-
   p{
-      font-size: 13px;
-  }
-
-  /*HEADER*/
-  header{
-      height: 80px;
-      width: 100%;
-      background-color: white;
-      border-bottom: solid 1px darkgrey;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9999;
-  }
-
-  header img{
-      margin: 5px 0;
-  }
-
-  header .left{
-      float: left;
-  }
-
-  header .right{
-      float: right;
+      font-size: 0.8em;
   }
 
   /*DON'T LET ME DOWN*/
   article{
-    margin-top: 100px;
+    margin-top: 120px;
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -149,4 +112,5 @@ li{
   #creat h1::after{
       margin-left: 5px;
   }
+
 }
