@@ -1,4 +1,13 @@
 @charset "UTF-8";
+html{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 62.5%;
+    color: #707070;
+}
+
+body{
+    font-size: 1.6em;
+}
 
 li{
     list-style-type: none;
@@ -7,6 +16,17 @@ li{
 .clear{
     clear: both;
 }
+
+a{
+    text-decoration: none;
+    color: #09759E;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #c45500;
+}
+
 
 @media screen and (min-width: 767px){
     /*BASE*/
@@ -18,10 +38,6 @@ li{
 
     .flexBox{
       display: flex;
-    }
-
-    h1{
-        font-size: 2rem;
     }
 
     /*HEADER*/
@@ -50,7 +66,7 @@ li{
 
     /*MAIV VISUAL*/
     #mainVisual{
-        margin-top: 100px;
+        margin-top: 120px;
     }
 
     #mainVisual img{
@@ -71,12 +87,12 @@ li{
         text-align: center;
     }
 
-    #sideMenu .container{
-        width:87.5%;
+    #sideMenu h1{
+        font-size: 2em;
     }
 
-    #sideMenu h1{
-        font-size: 2rem;
+    #sideMenu .container{
+        width:87.5%;
     }
 
         /*SEARCH BOX*/
@@ -85,7 +101,7 @@ li{
             width: 80%;
             height: 10vh;
             min-height: 60px;
-            margin: 2vh 0 2vh 0;
+            margin: 20px 0 20px 0;
         }
 
         /*GENDER*/
@@ -104,7 +120,7 @@ li{
             min-height: 60px;
             min-width: 60px;
             position: relative;
-            margin-bottom: 2vh;
+            margin-bottom: 20px;
             background-color: white;
         }
 
@@ -141,6 +157,10 @@ li{
             margin: 0 auto;
         }
 
+        #checkBox h1{
+            margin-bottom: 20px;
+        }
+
         #checkBox ul{
             text-align: left;
         }
@@ -148,6 +168,11 @@ li{
         #checkBox li{
             margin: 10px;
             position: relative;
+            font-size: 1.25em;
+        }
+
+        #checkBox li:last-child{
+            margin-bottom: 20px;
         }
 
         input[type=checkbox]{
@@ -162,7 +187,7 @@ li{
             content: "";
             border: 1px solid darkgray;
             position: absolute;
-            top: 0;
+            top: 10%;
             left: 0;
             width: 10px;
             height: 10px;
@@ -177,6 +202,34 @@ li{
         }
 
         /*PRICE*/
+        #price{
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        #price h1{
+            margin-bottom: 20px;
+        }
+
+        #price p{
+            font-size: 1.5em;
+        }
+
+        #price .priceInput{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #price input[type=search]{
+            width: 80%;
+            height: 5vh;
+            min-height: 25px;
+            text-align: center;
+            margin-left: auto;
+        }
+
         #price .tilde{
             transform: rotate(90deg);
         }
@@ -191,10 +244,12 @@ li{
     article h1{
         border-bottom: 1px solid darkgray;
         margin-bottom: 10px;
+        font-size: 2em;
     }
 
-    article h2{
+    article .links p{
         text-align: right;
+        margin-bottom: 10px;
     }
 
     .topicBox, .box{
@@ -235,6 +290,10 @@ li{
         margin: 10px 0;
     }
 
+    .box p{
+        margin-bottom: 10px;
+    }
+
     #new #up .box{
         margin-bottom: 0;
         border-bottom: none;
@@ -249,9 +308,21 @@ li{
     }
 
     /*FOOTER*/
+    footer h1{
+        font-size: 2.5em;
+    }
         /*BRANDS*/
         #brand{
             background-color: #DBDBDB;
+            padding: 20px 0 20px 0;
+        }
+
+        #brand .container *{
+            margin-bottom: 20px;
+        }
+
+        #brand .container *:last-child{
+            margin-bottom: 0;
         }
 
         #brand img{
@@ -271,23 +342,59 @@ li{
         }
 
         /*SNSs*/
+        #sns .container{
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+
+        #sns ul{
+            margin-left: 30px;
+        }
+
         #sns li{
             display: inline;
+            margin-left: 10px;
+        }
+
+        .facebook{
+            color: #4267b2;
+        }
+
+        .twitter{
+            color: #38A1F3;
+        }
+
+        .line{
+            color: #00B900;
+        }
+
+        .instagram{
+            color: #C13584;
         }
 
         /*SITEMAP*/
         #siteMap{
             background-color: #DBDBDB;
-        }
-
-        #siteMap img{
-            width: 25%;
-            height: auto;
+            padding: 20px 0 20px 0;
         }
 
         #siteMap h1{
-            font-size: 18px;
+            font-size: 1em;
         }
 
+        #siteMap .lineText{
+            margin-left: 10%;
+        }
+
+        #siteMap .lineText:first-child{
+            margin-left: 0;
+        }
+
+        #siteMap img{
+            width: 20%;
+            height: auto;
+            margin-left: auto;
+        }
 
 }
