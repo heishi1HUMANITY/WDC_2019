@@ -85,7 +85,7 @@ a:hover{
         #sideMenu input[name="search"]{
             text-align: center;
             width: 80%;
-            height: 10vh;
+            height: 20%;
             min-height: 60px;
             margin: 20px 0 20px 0;
         }
@@ -215,6 +215,38 @@ a:hover{
             min-height: 25px;
             text-align: center;
             margin-left: auto;
+        }
+
+        #goswitch{
+            width: 80%;
+            height: 60px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        #goswitch input{
+            color: #707070;
+            background-color: transparent;
+            border: solid 1px darkgray;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            appearance: none;
+            width: 140px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform : translate(-50%,-50%);
+        }
+
+        #goswitch input:hover{
+            background-color: darkgray;
+        }
+
+        #goswitch input[placeholder]{
+            color: #707070;
         }
 
     /*FOOTER*/

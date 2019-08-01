@@ -19,6 +19,12 @@
         font-size: calc(100vw / 16);
     }
 
+    @media(min-width: 1907px){
+        #visual h1{
+            font-size: 120px;
+        }
+    }
+
     @media(max-width: 1372px){
         #visual h1{
             font-size: 85px;
