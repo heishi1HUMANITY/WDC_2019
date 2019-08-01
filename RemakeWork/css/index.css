@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 767px){
+/*@media screen and (min-width: 767px){*/
     /*MAIV VISUAL*/
     #mainVisual{
         margin-top: 120px;
@@ -42,6 +42,19 @@
         margin: 0 auto;
         margin-bottom: 30px;
         text-align: center;
+    }
+
+    .topicBox .sentens{
+        height: 20px;
+        position: relative;
+    }
+
+    .topicBox p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        white-space: nowrap;
     }
 
     .topicBox:first-child,.box:first-child{
@@ -95,4 +108,4 @@
         border-left: 1px solid darkgray;
     }
 
-}
+/*}*/
