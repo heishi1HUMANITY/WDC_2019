@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>new account</title>
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="../favicon.ico">
+        <link rel="stylesheet" href="../common/css/html5reset-1.6.1.css">
+        <link rel="stylesheet" href="../common/css/master.css">
+        <link rel="stylesheet" href="css/auth1.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2e01045045.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+        <script src="../common/js/initialize.js"></script>
+        <script src="js/firebase-auth.js"></script>
+    </head>
+
+    <body>
+        <!--HEADER-->
+        <header>
+            <div class="container">
+                <a href="../index.html"><img src="../common/img/logo.png" height="70px"class="left"></a>
+                <div class="right">
+                    <a href="#"><img src="../common/img/star.png" height="70px"></a>
+                    <a href="../member/membersite.html"><img src="../common/img/user.png" height="70px"></a>
+                    <a href="#"><img src="../common/img/cart.png" height="70px"></a>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+                <div id="signup">
+                    <div class="inner">
+                        <h1 class="top">Creat your new account</h1>
+                        <div class="inputbox">
+                            <h1>Username</h1>
+                            <input type="text" id="username">
+                        </div>
+                        <div class="inputbox">
+                            <h1>Email</h1>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="inputbox">
+                            <h1>Password</h1>
+                            <input type="password" id="password" placeholder="At least 6 characters">
+                        </div>
+                        <input type="button" value="CREAT AN ACCOUNT" onclick="signUp()">
+
+                        <div class="note">
+                            <p>note:This site is test version.DO NOT ENTER YOUR CRITICAL INFO.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!--FOOTER-->
+        <footer>
+            <div id="brand">
+                <div class="container">
+                    <h1>STORE BRAND</h1>
+                    <img src="../common/img/brand1.png">
+
+                    <h1>BUSINESS PARTNER</h1>
+                    <div class="flexBox">
+                        <img src="../common/img/brand2.png">
+                        <img src="../common/img/brand3.png">
+                        <img src="../common/img/brand4.png">
+                        <img src="../common/img/brand5.png">
+                    </div>
+                </div>
+            </div>
+
+            <div id="sns">
+                <div class="container">
+                    <h1>OFFICIAL</h1>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square facebook fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square twitter fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-line line fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram instagram fa-3x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="siteMap">
+                <div class="container">
+                    <div class="flexBox">
+                        <div class="lineText">
+                            <ul>
+                                <li><h1>GUIDE/CONTACT</h1></li>
+                                <li>Help</li>
+                                <li>Terms of service</li>
+                                <li>Privacy policy</li>
+                            </ul>
+                        </div>
+
+                        <div class="lineText">
+                            <ul>
+                                <li><h1>HOUSE CARD MEMBER</h1></li>
+                                <li>Sing up</li>
+                                <li>Sign in</li>
+                                <li>Member service</li>
+                                <li>App</li>
+                            </ul>
+                        </div>
+
+                        <div class="lineText">
+                            <ul>
+                                <li><h1>NISHIMURA Co.,Ltd.</h1></li>
+                                <li>Web site</li>
+                                <li>About us</li>
+                                <li>Recruit</li>
+                                <li>Message</li>
+                                <li>Gift card</li>
+                            </ul>
+                        </div>
+
+                        <img src="../common/img/big_logo.png">
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </body>
+</html>

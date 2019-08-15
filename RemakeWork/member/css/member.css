@@ -45,34 +45,28 @@
     transform: translate(-50%,-50%);
   }
 
-  #textBox input{
-      width: 296px;
-      height: 26px;
+  input[type="text"],input[type="password"]{
+      width: 288px;
+      height: 25px;
+      border: 1px solid darkgray;
+      border-radius: 3px;
+      box-shadow: none;
+      padding-left: 10px;
       margin-bottom: 10px;
   }
 
-  #button{
-    width: 300px;
-    height: 30px;
-    background-color: #A58F86;
-    margin: 0 auto;
-    margin-bottom: 3px;
-    position: relative;
-  }
-
-  #button:hover{
-      background-color: #c2a99f;
-  }
-
-  #button p{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-  }
-
-  #button a{
+  input[type="button"]{
+      width: 300px;
+      height: 30px;
+      background-color: #A58F86;
+      margin: 0 auto;
+      margin-bottom: 3px;
       color: white;
+      border: none;
+  }
+
+  input[type="button"]:hover{
+      background-color: #c2a99f;
   }
 
   #pwremainder{

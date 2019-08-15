@@ -12,6 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../common/css/master.css">
     <script src="https://kit.fontawesome.com/2e01045045.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="../common/js/initialize.js"></script>
+    <script src="js/signin.js"></script>
+</head>
   </head>
 
   <body>
@@ -21,7 +26,7 @@
             <a href="../index.html"><img src="../common/img/logo.png" height="70px"class="left"></a>
             <div class="right">
                 <a href="#"><img src="../common/img/star.png" height="70px"></a>
-                <a href="#"><img src="../common/img/user.png" height="70px"></a>
+                <a href="membersite.html"><img src="../common/img/user.png" height="70px"></a>
                 <a href="#"><img src="../common/img/cart.png" height="70px"></a>
             </div>
         </div>
@@ -36,16 +41,12 @@
                     <h1>HELLO</h1>
                 </div>
                 <div id="textBox">
-                    <input type="text" name="id" placeholder="Email">
-                    <input type="password" name="pass" placeholder="Password">
+                    <input type="text" name="id" placeholder="Email" id="email">
+                    <input type="password" name="pass" placeholder="Password" id="password">
                 </div>
 
                 <!--BUTTON-->
-                <div id="button">
-                    <a href="#">
-                        <p>SIGN-IN</p>
-                    </a>
-                </div>
+                <input type="button" id="signinfunc" value="SIGN-IN" onclick="signIn()">
 
                 <div id="pwremainder">
                     <a href="#" class="remainder">Forgot your password?</a>
@@ -54,11 +55,7 @@
                 <!--CREAT ACCOUNT??????-->
                 <div id="creat">
                     <h1>Do you need new account?</h1>
-                    <div id="button">
-                        <a href="#">
-                            <p>CREAT NEW ACCOUNT</p>
-                        </a>
-                    </div>
+                        <input type="button" id="creat" value="CREAT NEW ACCOUNT" onclick="location.href='../auth/auth.html'">
                 </div>
             </div>
         </div>
