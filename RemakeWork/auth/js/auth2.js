@@ -4,7 +4,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     // User is signed in.
     firebase.auth().currentUser.sendEmailVerification();
     setTimeout(function(){
-        location.href = '../index.html';
+        location.href = '../user/user.html';
     },3*1000);
   } else {
     // No user is signed in.

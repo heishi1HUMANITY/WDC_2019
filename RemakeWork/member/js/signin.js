@@ -5,6 +5,7 @@ function signIn(){
 
     firebase.auth().signInWithEmailAndPassword(email, password).then(function(result){
         alert('success');
+        location.href = '../user/user.html';
     }).catch(function(error){
         var errorCode=error.code;
         var errorMessage=error.message;
