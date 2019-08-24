@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*@media screen and (min-width: 767px){*/
+
+    article{
+      margin-top: 120px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .pwreset{
+      border: 1px solid darkgray;
+      width: 300px;
+      margin: 0 auto;
+      position: relative;
+      text-align: left;
+      padding: 20px 25px;
+    }
+
+    .pwreset h1{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .pwreset p{
+        font-size: 0.8em;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"]{
+        width: 288px;
+        height: 25px;
+        border: 1px solid darkgray;
+        border-radius: 3px;
+        box-shadow: none;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    input[type="button"]{
+        width: 300px;
+        height: 30px;
+        background-color: #A58F86;
+        margin: 0 auto;
+        margin-bottom: 3px;
+        color: white;
+        border: none;
+    }
+
+    input[type="button"]:hover{
+        background-color: #c2a99f;
+    }
+
+/*}*/

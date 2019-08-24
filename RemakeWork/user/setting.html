@@ -8,12 +8,12 @@
         <link rel="icon" href="../favicon.ico">
         <link rel="stylesheet" href="../common/css/html5reset-1.6.1.css">
         <link rel="stylesheet" href="../common/css/master.css">
-        <link rel="stylesheet" href="css/user.css">
+        <link rel="stylesheet" href="css/setting.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2e01045045.js"></script>
     </head>
 
-    <body onload="pre();">
+    <body>
         <!--HEADER-->
         <header>
             <div class="container">
@@ -26,28 +26,32 @@
             </div>
         </header>
 
-        <article>
-            <h1 id="username">Anonymous</h1>
-        </article>
-
         <div class="container">
-            <div id="functions">
-                <div class="funcbox">
-                    <h1>SIGN-OUT</h1>
-                    <input type="button" value="SIGN-OUT" onclick="signoutfunc()">
+            <article>
+
+                <div id="function">
+                    <div class="funcbox">
+                        <h1>UPDATE USERNAME</h1>
+                        <input type="text" placeholder="Username" id="name">
+                        <input type="button" onclick="nameUpdate()" value="SUBMIT">
+                    </div>
+
+                    <div class="funcbox">
+                        <h1>UPDATE EMAIL</h1>
+                        <input type="text" placeholder="Email" id="email">
+                        <input type="button" onclick="emailUpdate()" value="SUBMIT">
+                    </div>
+
+                    <div class="funcbox">
+                        <h1>UPDATE PASSWORD</h1>
+                        <input type="password" placeholder="Password" id="password">
+                        <input type="button" onclick="passwordUpdate()" value="SUBMIT">
+                    </div>
                 </div>
 
-                <div class="funcbox">
-                    <h1>SETTING</h1>
-                    <input type="button" value="CHANGE YOUR ACCOUNT STATUS" onclick="location.href = 'setting.html'">
-                </div>
-
-                <div class="funcbox">
-                    <h1>DELETE ACCOUNT</h1>
-                    <input type="button" value="DELETE ACCOUNT" onclick="deletefunc()">
-                </div>
-            </div>
+            </article>
         </div>
+
 
 
         <!--FOOTER-->
@@ -123,6 +127,6 @@
         <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
         <script src="../common/js/initialize.js"></script>
         <script src="../common/js/link.js"></script>
-        <script src="js/user.js"></script>
+        <script src="js/setting.js"></script>
     </body>
 </html>
