@@ -7,7 +7,7 @@ function pre(){
             return;
         }else{
             alert("You are not login.");
-            //location.href = '../member/membersite.html';
+            location.href = '../member/membersite.html';
             return;
         }
     });
