@@ -9,8 +9,10 @@ function signUp() {
       console.log(result);
       firebase.auth().currentUser.updateProfile({
           displayName: username
+      }).then(function(){
+         location.href = "auth2.html"; 
       });
-      location.href = "auth2.html";
+
     }).catch(function(error) {
 
     });

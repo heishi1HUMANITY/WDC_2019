@@ -3,6 +3,7 @@ function pre(){
         if(user){
             if(user.displayName){
                 document.getElementById('username').innerText = user.displayName;
+                document.title = user.displayName;
             }
             return;
         }else{
